@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My portofolio</title>
+    <title>My portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="javascript/app.js"></script>
 
 </head>
 <body>
-    <header>
+    <header id="Home">
         <div class="bg">
         <div class="container">
         <nav class="flex items-center justify-between">
@@ -24,10 +25,10 @@
                     <img src="./images/blossom.png" alt="logo" width="100" height="100" class="img logo">
                 </div>
                 <div>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Resume</a>
+                    <a href="">Home</a>
+                    <a href="#About">About</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#Resume">Resume</a>
                 </div>
             </div>
             <div class="right">
@@ -42,10 +43,8 @@
                     <h6 class="myfont"> Dinija Seferović</h6>
                     <h1> I'm an aspiring <br>
                         <span> Web Developer </span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
+                    <p>Welcome to my personal portfolio. Currently it includes little projects I have done while learning HTML, CSS, JavaScript that you can check out. You can find out more about me in my CV or in the About section.
+                    </p>
                     <button class="btn btn-sec"> DOWNLOAD CV</button>
                 </div>
 
@@ -55,31 +54,31 @@
         </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="About">
         <div class="container flex items-center">
-            <div class="flex-1">
+            <div class="flex-1" >
                 <div class="circleborder"><img class="about-me-img" src="./images/beretka.jpg" alt=""></div>
             </div>
             <div class="flex-1">
                 <h1>About <span>ME</span></h1>
                 <h3>Hello!</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.</p>
+                <p>My name is Dinija. At the moment I am a student at Elektrotehnicki fakultet in Sarajevo, field of Software Engineering and Information Technology. I find myself a very motivated, ambitious and creative person, a lifelong learner.
+
+                    My specialities include quickly learning new skills and programming languages, problem solving, optimization and design principles. So far I have C, C++, SQL, HTML, CSS and JavaScript under my belt.
+                    I am enthusiastically grabbing onto any other programming languages, frameworks or principles I can integrate into the colorful and fun coding web in my head.
+
+                    Front-end development calls to all my passions; it incorporates creativity, problem solving and design, and that is what I aspire to do in upcoming years. </p>
 
                 <div>
                     <ul>
                         <li>
-                            <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+                            <a href="https://www.linkedin.com/in/dinija-seferovi%C4%87-722845197/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
                         <li>
-                            <a href="#"><i class="fab fa-github icon"></i></a></li>
+                            <a href="https://github.com/DinijaSeferovic" target="_blank"><i class="fab fa-github icon" ></i></a></li>
                         <li>
-                            <a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
+                            <a href="https://www.facebook.com/dinija.seferovic/" target="_blank"><i class="fab fa-facebook-f icon"></i></a></li>
                         <li>
-                            <a href="#"><i class="fab fa-instagram icon"></i></a>
+                            <a href="https://www.instagram.com/jacqueene_/" target="_blank"><i class="fab fa-instagram icon"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -87,7 +86,7 @@
         </div>
 
     </section>
-    <section class="projects">
+    <section class="projects" id="Projects">
         <div class="container">
              <h1 class="section-heading"><span>My</span> projects</h1>
              <div class="card-wrapper">
@@ -120,6 +119,100 @@
                      </div>
                  </div>
 
+            </div>
+        </div>
+    </section>
+    <section class="resume" id="Resume">
+        <div class="container" >
+            <h1 class="section-heading2" ><span>My</span> resume</h1>
+            <h2 class="description"> Education & Skills</h2>
+            <div class="content">
+                <div class="left">
+                    <div class="inner-left">
+                        <div class="heading">
+                            <img class="graduation-cap" src="./images/graduation-cap.png" alt="">
+                            <h5>Education</h5>
+                        </div>
+                        <div class="timeline-wrapper">
+                            <div class="item">
+                                <p>2014-2018 </p>
+                                <a href="https://www.gimnazija-ze.com.ba/" target="_blank" class="central">High School</a>
+                                <p> Secondary Education</p>
+                            </div>
+                            <div class="item">
+                                <p>2018-2022 </p>
+                                <a href="http://www.etf.unsa.ba/index.php?id=39" target="_blank" class="central">University</a>
+                                <p> Bachelor of Computer Science </p>
+                            </div>
+                            <div class="item">
+                                <p> 2022-2024 </p>
+                                <a href="http://www.etf.unsa.ba/index.php?id=39" target="_blank" class="central">Master</a>
+                                <p> Master of Science</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-right">
+                        <div class="heading">
+                            <img class="suitcase" src="./images/suitcase.png" alt="">
+                            <h5>Experience</h5>
+                        </div>
+                            <div class="timeline-wrapper">
+
+                                <div class="item">
+                                    <p>2020-2021 </p>
+                                    <a href="https://www.fiverr.com/" target="_blank" class="central">Fiverr Freelance</a>
+                                    <p> Design Freelancer</p>
+                                </div>
+                                <div class="item">
+                                    <p>x-x </p>
+                                    <a href="" target="_blank" class="central">X</a>
+                                    <p> First job</p>
+                                </div>
+                                <div class="item">
+                                    <p> x-x </p>
+                                    <a href="" target="_blank" class="central">X</a>
+                                    <p>Second job</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="skills-wrapper">
+                        <div class="skill-box">
+                            <h4>Html & CSS</h4>
+                            <div class="progress-wrap">
+                                <span data-percent="65" class="progress-bar">
+                                    <span class="tooltip"> 65%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <h4>JavaScript</h4>
+                            <div class="progress-wrap">
+                                <span data-percent="30" class="progress-bar">
+                                    <span class="tooltip"> 30%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <h4>C,C++,Java</h4>
+                            <div class="progress-wrap">
+                                <span data-percent="80" class="progress-bar">
+                                    <span class="tooltip"> 80%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <h4>Other?</h4>
+                            <div class="progress-wrap">
+                                <span data-percent="50" class="progress-bar">
+                                    <span class="tooltip"> 50%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
