@@ -6,7 +6,7 @@
 --pure:#FFFFFF;
 --secondary: #e3cdc3;
 --ternary: #FCF2ED;
---middle: #F2D0B1/*#dc8276*/;
+--middle: #F1D4BB/*#dc8276*/;
 }
 
 
@@ -303,6 +303,7 @@ grid-template-columns: repeat(3, 1fr);
 grid-column-gap:2rem;
 grid-row-gap:2rem;
 place-items: center;
+position: relative;
 }
 
 .hovereffect {
