@@ -6,7 +6,7 @@
 --pure:#FFFFFF;
 --secondary: #e3cdc3;
 --ternary: #FCF2ED;
---middle: #F0DBC5/*#dc8276*/;
+--middle: #F3DAE0/*#dc8276*/;
 }
 
 
@@ -107,10 +107,10 @@ padding: 3rem 0;
 content:'';
   position: absolute;
   width: 100%;
-  height: 450px;
+  height: 480px;
   margin: auto;
   z-index: -2;
-  background-image: linear-gradient(to bottom, rgba(255,0,0,0), var(--middle) 45%);
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), var(--middle) 50%);
   left:0%;
   bottom:-200px;
 }
@@ -303,7 +303,6 @@ grid-template-columns: repeat(3, 1fr);
 grid-column-gap:2rem;
 grid-row-gap:2rem;
 place-items: center;
-position: relative;
 }
 
 .hovereffect {
