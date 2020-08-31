@@ -16,7 +16,7 @@ window.addEventListener("load", function () {
       loader.className += " hidden"; // class "loader hidden"
       const loader_bg = document.querySelector(".loader_bg");
       loader_bg.className += " hidden"; // class "loader_bg hidden"
-      }, 500);
+      }, 700);
 
 })
 
