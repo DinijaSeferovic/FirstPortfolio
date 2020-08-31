@@ -10,14 +10,15 @@ bars.forEach(function(bar){
     console.log(percentage);
 })
 
-});
 window.addEventListener("load", function () {
       setTimeout(function(){
       const loader = document.querySelector(".loader");
       loader.className += " hidden"; // class "loader hidden"
       const loader_bg = document.querySelector(".loader_bg");
       loader_bg.className += " hidden"; // class "loader_bg hidden"
-      }, 1000);
+      }, 500);
+});
+    
 
 });
 
