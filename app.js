@@ -8,7 +8,7 @@ bars.forEach(function(bar){
     tooltip.innerText=percentage+'%';
     bar.style.width= percentage+'%';
     console.log(percentage);
-})
+});
 
 window.addEventListener("load", function () {
       setTimeout(function(){
