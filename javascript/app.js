@@ -32,8 +32,6 @@ times.addEventListener("click", function () {
     mobileNav.classList.remove("open");
 });
 
-menu.removeEventListener("click");
-times.removeEventListener("click");
 
 });
 
