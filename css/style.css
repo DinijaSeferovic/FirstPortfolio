@@ -1041,8 +1041,8 @@ footer .top a:hover {
     position: fixed;
     top: calc(57vh - 75px);
     left: calc(52.8vw - 75px);
-    top: 40.5%;
-    left: 40.5%;
+    top: 42.5%;
+    left: 42.5%;
     }
     .profile .right h1{
         font-size: 4rem;
@@ -1109,6 +1109,8 @@ footer .top a:hover {
     section.projects .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+        align-content: center;
+        margin-left: 1.7rem;
     }
     section.resume .content .left .item:after {
         margin-top:-6rem;
@@ -1206,6 +1208,8 @@ header #main-nav{
     section.projects .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+        align-content: center;
+        margin-left: 1.7rem;
     }
     section.resume .content .left .item:after {
         margin-top:-6rem;
