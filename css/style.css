@@ -1108,6 +1108,7 @@ footer .top a:hover {
     }
     section.projects .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
     }
     section.resume .content .left .item:after {
         margin-top:-6rem;
@@ -1204,6 +1205,7 @@ header #main-nav{
     }
     section.projects .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
     }
     section.resume .content .left .item:after {
         margin-top:-6rem;
