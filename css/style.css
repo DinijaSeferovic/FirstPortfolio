@@ -9,8 +9,6 @@
 --middle: #F3DADA/*#dc8276*/;
 }
 
-
-
 body {
 font-family: 'Baloo Tamma 2', cursive;
 font-size: 25px;
@@ -145,10 +143,22 @@ height: auto;
 
 
 .container {
-max-width:1152px;
+max-width: 1152px;
 padding: 0 15px;
 margin: 0 auto;
 }
+
+@media (min-width: 361px) {
+    .container {
+      max-width: 341px;
+    }
+  }
+
+@media (min-width: 450px) {
+    .container {
+      max-width: 430px;
+    }
+  }
 
 @media (min-width: 576px) {
     .container {
@@ -860,44 +870,102 @@ footer .top a:hover {
 }
 
 
-@media (max-width:1024px){
+@media only screen and (max-width:1368px){
     header #main-nav{
         display:none;
     }
     .profile .right h1{
+        font-size: 4rem;
+    }
+    .profile .right p {
+        font-size: 2rem;
+    }
+    .profile .right h6 {
         font-size: 3rem;
+    }
+    .profile .right h1 span {
+        font-size: 5.5rem;
     }
     .profile:before {
         height:560px;
-        bottom:-250px;
+        bottom:-180px;
     }
     .profile{
         padding-top: 8rem;
     }
+    .mobile-nav ul li a {
+        font-size: 4rem;
+    }
     header{
-        clip-path: polygon(0 0,100% 0, 100% 105%,50% 95%, 0 105%);
+        clip-path: polygon(0 0,100% 0, 100% 120%,50% 110%, 0 120%);
     }
     .about .container .circleborder img {
         width: 270px;
         height: 270px;
+        margin-top:-4rem;
+        margin-right: 0px;
+    }
+    .mobile-nav ul li a {
+        font-size:4rem;
     }
     section.about .about-me-img {
         margin: 0rem;
     }
+    section.about p {
+        font-size: 1.8rem;
+    }
+    section.about ul {
+        justify-content:center;
+        padding-top: 5rem;
+        padding-left: 3.5rem;
+    }
+    section.about ul li a {
+        width: 60px;
+        height: 60px;
+        line-height: 65px;
+        font-size: 30px;
+    }
+
+    .about-inner-wrap{
+            display: flex;
+            flex-direction: column;
+            padding: 3rem;
+            margin-top:3rem;
+            justify-content: center;
+            align-items: center;
+    }
+
     section.projects .card-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    section.contact input {
+    padding: 1rem;
+    text-size: 1.8rem;
+    }
+
+    section.contact .input-wrap-2 textarea {
+    padding: 1rem;
+    text-size: 1.8rem;
+    }
+
+    footer .footer-socials a{
+        font-size:3rem;
+    }
+
+    footer .top a {
+        font-size: 80px;
+    }
+
 }
 
-@media (max-width: 970px) {
+@media only screen and (max-width:960px) {
 
     section.resume .content{
         display: block;
     }
     section.resume .content .left {
         margin-bottom: 6rem;
-
     }
     section.projects .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
@@ -907,7 +975,7 @@ footer .top a:hover {
     }
 }
 
-@media (max-width:576px){
+@media only screen and (max-width:576px){
     header #main-nav{
         display:none;
     }
@@ -956,7 +1024,192 @@ footer .top a:hover {
 
 }
 
+@media only screen and (max-width:450px){
+    header #main-nav{
+        display:none;
+    }
+    body{
+        font-size:1rem;;
+    }
+    header{
+        height: 1050px;
+    }
+    .loader_bg img {
+    width:50px;
+    height:50px;
+    position: fixed;
+    top: calc(57vh - 75px);
+    left: calc(52.8vw - 75px);
+    top: 40.5%;
+    left: 40.5%;
+    }
+    .profile .right h1{
+        font-size: 4rem;
+    }
+    .profile .right h1 span{
+        font-size:3.2rem;
+    }
+    .profile .right p {
+        font-size: 1.5rem;
+    }
+    .profile .right h6 {
+        font-size: 3rem;
+    }
 
+    .profile:before {
+        height:500px;
+        bottom:-150px;
+    }
+    .profile{
+        padding-top: 8rem;
+    }
+    header{
+        clip-path: polygon(0 0,100% 0, 100% 115%,50% 107%, 0 115%);
+    }
+    section.about-inner-wrap{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        margin-top:3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    section.about .container .circleborder img {
+        width: 270px;
+        height: 270px;
+        margin-left: -5px;
+        margin-right: 0px;
+    }
+    section.about .about-me-img {
+        margin: 2.5rem;
+    }
+    section.about p {
+        margin: 1.2rem;
+        font-size: 1.5rem;
+        line-height: 2.7rem;
+    }
+    section.about h1 {
+        margin-left: 1.2rem;
+    }
+    section.about h3 {
+        font-size: 2rem;
+        margin-left: 1.2rem;
+    }
+    section.about ul {
+        justify-content:center;
+        padding-top: 5rem;
+    }
+    section.about ul li a {
+        width: 50px;
+        height: 50px;
+        line-height: 53px;
+        font-size: 25px;
+    }
+    section.projects .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.resume .content .left .item:after {
+        margin-top:-6rem;
+    }
+    .mobile-nav ul li a {
+        font-size: 3rem;
+    }
+    section.contact .input-wrap {
+        grid-gap: 0.2rem;
+    }
+    section.contact{
+        clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
+    }
+
+}
+
+@media only screen and (max-width:361px){
+header #main-nav{
+        display:none;
+    }
+    body{
+        font-size:1rem;;
+    }
+    header{
+        height: 1050px;
+    }
+    .profile .right h1{
+        font-size: 4rem;
+    }
+    .profile .right h1 span{
+        font-size:4.2rem;
+    }
+    .profile .right p {
+        font-size: 1.5rem;
+    }
+    .profile .right h6 {
+        font-size: 3rem;
+    }
+
+    .profile:before {
+        height:500px;
+        bottom:-200px;
+    }
+    .profile{
+        padding-top: 8rem;
+    }
+    header{
+        clip-path: polygon(0 0,100% 0, 100% 115%,50% 107%, 0 115%);
+    }
+    section.about-inner-wrap{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        margin-top:3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    section.about .container .circleborder img {
+        width: 270px;
+        height: 270px;
+        margin-left: -5px;
+        margin-right: 0px;
+    }
+    section.about .about-me-img {
+        margin: 2.5rem;
+    }
+    section.about p {
+        margin: 1.2rem;
+        font-size: 1.5rem;
+        line-height: 2.7rem;
+    }
+    section.about h1 {
+        margin-left: 1.2rem;
+    }
+    section.about h3 {
+        font-size: 2rem;
+        margin-left: 1.2rem;
+    }
+    section.about ul {
+        justify-content:center;
+    }
+    section.about ul li a {
+        width: 50px;
+        height: 50px;
+        line-height: 53px;
+        font-size: 25px;
+    }
+    section.projects .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.resume .content .left .item:after {
+        margin-top:-6rem;
+    }
+    .mobile-nav ul li a {
+        font-size: 3rem;
+    }
+    section.contact .input-wrap {
+        grid-gap: 0.2rem;
+    }
+    section.contact{
+        clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
+    }
+}
 
 
 
