@@ -148,9 +148,10 @@ padding: 0 15px;
 margin: 0 auto;
 }
 
+
 @media (min-width: 361px) {
     .container {
-      max-width: 341px;
+      max-width: 351px;
     }
   }
 
@@ -1084,20 +1085,20 @@ footer .top a:hover {
         margin: 2.5rem;
     }
     section.about p {
-        margin: 1.2rem;
-        font-size: 1.5rem;
-        line-height: 2.7rem;
+        margin: 2rem;
+        font-size: 1.3rem;
+        line-height: 2.3rem;
     }
     section.about h1 {
-        margin-left: 1.2rem;
+        margin-left: 2rem;
     }
     section.about h3 {
         font-size: 2rem;
-        margin-left: 1.2rem;
+        margin-left: 2rem;
     }
     section.about ul {
         justify-content:center;
-        padding-top: 5rem;
+        margin-left:-0.1rem;
     }
     section.about ul li a {
         width: 50px;
@@ -1117,6 +1118,9 @@ footer .top a:hover {
     section.contact .input-wrap {
         grid-gap: 0.2rem;
     }
+    section.contact .input-wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
     section.contact{
         clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
     }
@@ -1132,6 +1136,10 @@ header #main-nav{
     }
     header{
         height: 1050px;
+    }
+    .hovereffect {
+        width: 90%;
+        height: 90%;
     }
     .profile .right h1{
         font-size: 4rem;
@@ -1174,16 +1182,16 @@ header #main-nav{
         margin: 2.5rem;
     }
     section.about p {
-        margin: 1.2rem;
+        margin: 2rem;
         font-size: 1.5rem;
         line-height: 2.7rem;
     }
     section.about h1 {
-        margin-left: 1.2rem;
+        margin-left: 2rem;
     }
     section.about h3 {
         font-size: 2rem;
-        margin-left: 1.2rem;
+        margin-left: 2rem;
     }
     section.about ul {
         justify-content:center;
@@ -1205,6 +1213,9 @@ header #main-nav{
     }
     section.contact .input-wrap {
         grid-gap: 0.2rem;
+    }
+    section.contact .input-wrap {
+        grid-template-columns: repeat(1, 1fr);
     }
     section.contact{
         clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
