@@ -26,8 +26,11 @@ transform: all .3s ease;
 }
 
 .btn-primary {
+
 background: var(--primary);
 color: var(--pure);
+    padding:0rem 2rem;
+
 }
 
 .btn-primary:hover{
