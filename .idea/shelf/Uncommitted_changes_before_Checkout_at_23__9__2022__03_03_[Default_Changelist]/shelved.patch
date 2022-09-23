@@ -1,0 +1,520 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n    <title>My portfolio</title>\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap\" rel=\"stylesheet\">\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap\" rel=\"stylesheet\">\r\n    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.6.3/css/all.css\" integrity=\"sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/\" crossorigin=\"anonymous\">\r\n    <script src=\"https://code.jquery.com/jquery-3.3.1.js\" integrity=\"sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=\" crossorigin=\"anonymous\"></script>\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap\" rel=\"stylesheet\">\r\n    <link rel=\"icon\" href=\"./images/blossomico.png\">\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"./css/style.css\" media=\"screen\">\r\n</head>\r\n<body>\r\n\r\n    <div class=\"site-main-wrapper\">\r\n        <button class=\"menu\"><i class=\"fa fa-bars\" aria-hidden=\"true\"></i></button>\r\n        <div class=\"mobile-nav\">\r\n            <button class=\"times\"><i class=\"fa fa-times\" aria-hidden=\"true\"></i></button>\r\n            <ul>\r\n                <li><a href=\"\">Home</a></li>\r\n                <li><a href=\"#About\">About</a></li>\r\n                <li><a href=\"#Projects\">Projects</a></li>\r\n                <li><a href=\"#Resume\">Resume</a></li>\r\n                <li><a href=\"#Contact\">Contact</a></li>\r\n            </ul>\r\n        </div>\r\n\r\n\r\n        <div class=\"loader_bg\">\r\n            <img src=\"./images/blossom.png\" alt=\"logo\" class=\"img logo\">\r\n\r\n            <div class=\"loader\"></div>\r\n        </div>\r\n        <header id=\"Home\">\r\n            <div class=\"bg\">\r\n                <div class=\"container\">\r\n                    <nav id=\"main-nav\" class=\"flex items-center justify-between\">\r\n                        <div class=\"left flex items-center\">\r\n                            <div class=\"branding\">\r\n                                <img src=\"./images/blossom.png\" alt=\"logo\" width=\"100\" height=\"100\" class=\"img logo\">\r\n                            </div>\r\n                            <div>\r\n                                <a href=\"\">Home</a>\r\n                                <a href=\"#About\">About</a>\r\n                                <a href=\"#Projects\">Projects</a>\r\n                                <a href=\"#Resume\">Resume</a>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"right\">\r\n                            <a href=\"#Contact\" class=\"btn btn-primary\" style=\"text-decoration: none;\">Contact</a>\r\n                        </div>\r\n\r\n                    </nav>\r\n                    <div class=\"profile flex items-center justify-between\">\r\n                        <div class=\"right flex-1\">\r\n                            <h6 class=\"myfont\"> Dinija Seferović</h6>\r\n                            <h1> I'm an aspiring <br>\r\n                                <span> Software Engineer </span></h1>\r\n                            <p>Welcome to my personal portfolio. Currently it includes little projects I have done while learning programming that you can check out. You can find out more about me in my CV or in the About section.\r\n                            </p>\r\n                            <button class=\"btn btn-sec\" type=\"submit\" onclick=\"window.open('CVSeferovicDinijaENG2.pdf')\">DOWNLOAD CV</button>\r\n                        </div>\r\n\r\n\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </header>\r\n\r\n        <section class=\"about\" id=\"About\">\r\n            <div class=\"container flex items-center about-inner-wrap\">\r\n                <div class=\"flex-1\" >\r\n                    <div class=\"circleborder\"><img class=\"about-me-img\" src=\"./images/beretka.jpg\" alt=\"\"></div>\r\n                </div>\r\n                <div class=\"flex-1\">\r\n                    <h1>About <span>ME</span></h1>\r\n                    <h3>Hello!</h3>\r\n                    <p>My name is Dinija. At the moment I am a student at Elektrotehnicki fakultet in Sarajevo, field of Software Engineering and Information Technology. I find myself a very motivated, ambitious and creative person, a lifelong learner.\r\n\r\n                        My specialities include quickly learning new skills and programming languages, problem solving, optimization and design principles.\r\n                        I am enthusiastically grabbing onto any new programming languages, frameworks or principles I can integrate into the colorful and fun coding web in my head.\r\n\r\n                        Front-end development calls to all my passions; it incorporates creativity, problem solving and design, and that is what I aspire to do in upcoming years. </p>\r\n\r\n                    <div>\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"https://www.linkedin.com/in/dinija-seferovi%C4%87-722845197/\" target=\"_blank\"><i class=\"fab fa-linkedin-in icon\"></i></a></li>\r\n                            <li>\r\n                                <a href=\"https://github.com/DinijaSeferovic\" target=\"_blank\"><i class=\"fab fa-github icon\" ></i></a></li>\r\n                        </ul>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n\r\n        </section>\r\n        <section class=\"projects\" id=\"Projects\">\r\n            <div class=\"container\">\r\n                <h1 class=\"section-heading\"><span>My</span> projects</h1>\r\n                <div class=\"card-wrapper\">\r\n\r\n                    <div class=\"col-lg-3 col-md-4 col-sm-6 col-xs-12\">\r\n                        <div class=\"hovereffect\">\r\n                            <img class=\"img-responsive\" src=\"./images/fitness.png\" alt=\"\">\r\n                            <div class=\"overlay\">\r\n                                <h2>Fitness Web App</h2>\r\n                                <a class=\"info\" href=\"https://github.com/DinijaSeferovic/ASP.NetCore-OOAnalysisDesign-FitnessApp\">see more</a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-lg-3 col-md-4 col-sm-6 col-xs-12\">\r\n                        <div class=\"hovereffect\">\r\n                            <img class=\"img-responsive\" src=\"./images/shelter.png\" alt=\"\">\r\n                            <div class=\"overlay\">\r\n                                <h2>Pet Shelter Desktop App</h2>\r\n                                <a class=\"info\" href=\"https://github.com/DinijaSeferovic/Java-Pet-Shelter-Desktop-App\">see more</a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-lg-3 col-md-4 col-sm-6 col-xs-12\">\r\n                        <div class=\"hovereffect\">\r\n                            <img class=\"img-responsive\" src=\"./images/movie.png\" alt=\"\">\r\n                            <div class=\"overlay\">\r\n                                <h2>Movie Android App</h2>\r\n                                <a class=\"info\" href=\"https://github.com/DinijaSeferovic/Kotlin-Movies-Mob-App\">see more</a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-lg-3 col-md-4 col-sm-6 col-xs-12\">\r\n                        <div class=\"hovereffect\">\r\n                            <img class=\"img-responsive\" src=\"./images/covid.png\" alt=\"\">\r\n                            <div class=\"overlay\">\r\n                                <h2>Covid Angular App</h2>\r\n                                <a class=\"info\" href=\"https://github.com/DinijaSeferovic/AngularFirstApp\">see more</a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-lg-3 col-md-4 col-sm-6 col-xs-12\">\r\n                        <div class=\"hovereffect\">\r\n                            <img class=\"img-responsive\" src=\"./images/student.png\" alt=\"\">\r\n                            <div class=\"overlay\">\r\n                                <h2>Student JavaScript App</h2>\r\n                                <a class=\"info\" href=\"https://github.com/DinijaSeferovic/NodeJS-Student-App\">see more</a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </section>\r\n        <section class=\"resume\" id=\"Resume\">\r\n            <div class=\"container\" >\r\n                <h1 class=\"section-heading2\" ><span>My</span> resume</h1>\r\n                <h2 class=\"description\"> Education & Skills</h2>\r\n                <div class=\"content\">\r\n                    <div class=\"left\">\r\n                        <div class=\"inner-left\">\r\n                            <div class=\"heading\">\r\n                                <img class=\"graduation-cap\" src=\"./images/graduation-cap.png\" alt=\"\">\r\n                                <h5>Education</h5>\r\n                            </div>\r\n                            <div class=\"timeline-wrapper\">\r\n                                <div class=\"item\">\r\n                                    <p>2014-2018 </p>\r\n                                    <a href=\"https://www.gimnazija-ze.com.ba/\" target=\"_blank\" class=\"central\">High School</a>\r\n                                    <p> Secondary Education</p>\r\n                                </div>\r\n                                <div class=\"item\">\r\n                                    <p>2018-2022 </p>\r\n                                    <a href=\"http://www.etf.unsa.ba/index.php?id=39\" target=\"_blank\" class=\"central\">University</a>\r\n                                    <p> Bachelor of Computer Science </p>\r\n                                </div>\r\n                                \r\n                            </div>\r\n                        </div>\r\n                        <div class=\"inner-right\">\r\n                            <div class=\"heading\">\r\n                                <img class=\"suitcase\" src=\"./images/suitcase.png\" alt=\"\">\r\n                                <h5>Experience</h5>\r\n                            </div>\r\n                            <div class=\"timeline-wrapper\">\r\n\r\n                                <div class=\"item\">\r\n                                    <p>2020-2022 </p>\r\n                                    <a href=\"https://www.fiverr.com/\" target=\"_blank\" class=\"central\">Fiverr Freelance</a>\r\n                                    <p> Design Freelancer</p>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"right\">\r\n                        <div class=\"skills-wrapper\">\r\n                            <div class=\"skill-box\">\r\n                                <h4>Html & CSS</h4>\r\n                                <div class=\"progress-wrap\">\r\n                                <span data-percent=\"85\" class=\"progress-bar\">\r\n                                </span>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"skill-box\">\r\n                                <h4>JavaScript</h4>\r\n                                <div class=\"progress-wrap\">\r\n                                <span data-percent=\"60\" class=\"progress-bar\">\r\n                                </span>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"skill-box\">\r\n                                <h4>C, C++</h4>\r\n                                <div class=\"progress-wrap\">\r\n                                <span data-percent=\"80\" class=\"progress-bar\">\r\n                                </span>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"skill-box\">\r\n                                <h4>C#, Java, Kotlin</h4>\r\n                                <div class=\"progress-wrap\">\r\n                                <span data-percent=\"80\" class=\"progress-bar\">\r\n                                </span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </section>\r\n        <section class=\"contact\" id=\"Contact\">\r\n            <div class=\"container\">\r\n                <h1 class=\"section-heading\">Contact<span> Me</span></h1>\r\n                <div class=\"card-wrapper\">\r\n                    <div class=\"card\">\r\n                        <img src=\"./images/message.png\" alt=\"\">\r\n                        <h1> Email Me At</h1>\r\n                        <h6> seferovic.dinija@gmail.com</h6>\r\n                    </div>\r\n                </div>\r\n                <form action=\"mailto:seferovic.dinija@gmail.com\" method=\"GET\" enctype=\"text/plain\">\r\n                    <div class=\"input-wrap\">\r\n                        <input type=\"text\" placeholder=\"Your Name*\" name=\"Name\">\r\n                        <input type=\"email\" placeholder=\"Your Email*\" name=\"cc\">\r\n                    </div>\r\n                    <div class=\"input-wrap-2\">\r\n                        <input type=\"text\" placeholder=\"Your Subject\" name=\"Subject\">\r\n                        <textarea name=\"Body\" cols=\"30\" rows=\"7\" placeholder=\"Your message\"></textarea>\r\n                    </div>\r\n                    <div class=\"btn-wrapper\"> <button class=\"btn btn-primary\" type=\"submit\" value=\"Send\">Send Message</button> </div>\r\n                </form>\r\n            </div>\r\n        </section>\r\n        <footer>\r\n            <img src=\"./images/blossom.png\" alt=\"logo\" width=\"100\" height=\"100\">\r\n            <div class=\"footer-socials\">\r\n\r\n                <a href=\"https://www.linkedin.com/in/dinija-seferovi%C4%87-722845197/\" target=\"_blank\"><i class=\"fab fa-linkedin-in icon\"></i></a>\r\n                <a href=\"https://github.com/DinijaSeferovic\" target=\"_blank\"><i class=\"fab fa-github icon\" ></i></a>\r\n                \r\n            </div>\r\n            <div class=\"copyright\">\r\n                Copyright 2022 © Dinija Seferovic\r\n            </div>\r\n            <div class=\"top\">\r\n                <a href=\"#Home\"><i class=\"fa fa-arrow-circle-up\" aria-hidden=\"true\"></i></a>\r\n            </div>\r\n        </footer>\r\n    </div>\r\n\r\n    <script type=\"text/javascript\" src=\"javascript/app.js\"></script>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 7fb8e8c7042ea233b45bba0219566ce63f78dc2f)
++++ b/index.html	(date 1663894648232)
+@@ -15,257 +15,279 @@
+ </head>
+ <body>
+ 
+-    <div class="site-main-wrapper">
+-        <button class="menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+-        <div class="mobile-nav">
+-            <button class="times"><i class="fa fa-times" aria-hidden="true"></i></button>
+-            <ul>
+-                <li><a href="">Home</a></li>
+-                <li><a href="#About">About</a></li>
+-                <li><a href="#Projects">Projects</a></li>
+-                <li><a href="#Resume">Resume</a></li>
+-                <li><a href="#Contact">Contact</a></li>
+-            </ul>
+-        </div>
++<div class="site-main-wrapper">
++    <button class="menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
++    <div class="mobile-nav">
++        <button class="times"><i class="fa fa-times" aria-hidden="true"></i></button>
++        <ul>
++            <li><a href="">Home</a></li>
++            <li><a href="#About">About</a></li>
++            <li><a href="#Projects">Projects</a></li>
++            <li><a href="#Resume">Resume</a></li>
++            <li><a href="#Contact">Contact</a></li>
++        </ul>
++    </div>
+ 
+ 
+-        <div class="loader_bg">
+-            <img src="./images/blossom.png" alt="logo" class="img logo">
++    <div class="loader_bg">
++        <img src="./images/blossom.png" alt="logo" class="img logo">
+ 
+-            <div class="loader"></div>
+-        </div>
+-        <header id="Home">
+-            <div class="bg">
+-                <div class="container">
+-                    <nav id="main-nav" class="flex items-center justify-between">
+-                        <div class="left flex items-center">
+-                            <div class="branding">
+-                                <img src="./images/blossom.png" alt="logo" width="100" height="100" class="img logo">
+-                            </div>
+-                            <div>
+-                                <a href="">Home</a>
+-                                <a href="#About">About</a>
+-                                <a href="#Projects">Projects</a>
+-                                <a href="#Resume">Resume</a>
+-                            </div>
+-                        </div>
+-                        <div class="right">
+-                            <a href="#Contact" class="btn btn-primary" style="text-decoration: none;">Contact</a>
+-                        </div>
++        <div class="loader"></div>
++    </div>
++    <header id="Home">
++        <div class="bg">
++            <div class="container">
++                <nav id="main-nav" class="flex items-center justify-between">
++                    <div class="left flex items-center">
++                        <div class="branding">
++                            <img src="./images/blossom.png" alt="logo" width="100" height="100" class="img logo">
++                        </div>
++                        <div>
++                            <a href="">Home</a>
++                            <a href="#About">About</a>
++                            <a href="#Projects">Projects</a>
++                            <a href="#Resume">Resume</a>
++                        </div>
++                    </div>
++                    <div class="right">
++                        <a href="#Contact" class="btn btn-primary" style="text-decoration: none;">Contact</a>
++                    </div>
+ 
+-                    </nav>
+-                    <div class="profile flex items-center justify-between">
+-                        <div class="right flex-1">
+-                            <h6 class="myfont"> Dinija Seferović</h6>
+-                            <h1> I'm an aspiring <br>
+-                                <span> Software Engineer </span></h1>
+-                            <p>Welcome to my personal portfolio. Currently it includes little projects I have done while learning programming that you can check out. You can find out more about me in my CV or in the About section.
+-                            </p>
+-                            <button class="btn btn-sec" type="submit" onclick="window.open('CVSeferovicDinijaENG2.pdf')">DOWNLOAD CV</button>
+-                        </div>
++                </nav>
++                <div class="profile flex items-center justify-between">
++                    <div class="right flex-1">
++                        <h6 class="myfont"> Dinija Seferović</h6>
++                        <h1> I am a <br>
++                            <span> Software Engineer </span></h1>
++                        <p>Welcome to my personal portfolio. Currently it includes projects I have done while learning programming that you can check out. You can find out more about me in my CV or in the About section.
++                        </p>
++                        <button class="btn btn-sec" type="submit" onclick="window.open('CVSeferovicDinijaENG4.pdf')">DOWNLOAD CV</button>
++                    </div>
+ 
+ 
+-                    </div>
+-                </div>
+-            </div>
+-        </header>
++                </div>
++            </div>
++        </div>
++    </header>
+ 
+-        <section class="about" id="About">
+-            <div class="container flex items-center about-inner-wrap">
+-                <div class="flex-1" >
+-                    <div class="circleborder"><img class="about-me-img" src="./images/beretka.jpg" alt=""></div>
+-                </div>
+-                <div class="flex-1">
+-                    <h1>About <span>ME</span></h1>
+-                    <h3>Hello!</h3>
+-                    <p>My name is Dinija. At the moment I am a student at Elektrotehnicki fakultet in Sarajevo, field of Software Engineering and Information Technology. I find myself a very motivated, ambitious and creative person, a lifelong learner.
++    <section class="about" id="About">
++        <div class="container flex items-center about-inner-wrap">
++            <div class="flex-1" >
++                <div class="circleborder"><img class="about-me-img" src="./images/beretka.jpg" alt=""></div>
++            </div>
++            <div class="flex-1">
++                <h1>About <span>ME</span></h1>
++                <h3>Hello!</h3>
++                <p>My name is Dinija. I graduated from Faculty of Electrical Engineering, University of Sarajevo, field of Computer Science and Information Technology. I find myself a very motivated, ambitious and creative person, a lifelong learner.
+ 
+-                        My specialities include quickly learning new skills and programming languages, problem solving, optimization and design principles.
+-                        I am enthusiastically grabbing onto any new programming languages, frameworks or principles I can integrate into the colorful and fun coding web in my head.
++                    My specialities include quickly learning new skills and programming languages, problem solving, optimization and design principles.
++                    I am enthusiastically grabbing onto any new programming languages, frameworks or principles I can integrate into the colorful and fun coding web in my head.
+ 
+-                        Front-end development calls to all my passions; it incorporates creativity, problem solving and design, and that is what I aspire to do in upcoming years. </p>
++                    Full-stack development calls to all my passions; it incorporates creativity, problem solving and design, and that is what I aspire to do in upcoming years. </p>
+ 
+-                    <div>
+-                        <ul>
+-                            <li>
+-                                <a href="https://www.linkedin.com/in/dinija-seferovi%C4%87-722845197/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+-                            <li>
+-                                <a href="https://github.com/DinijaSeferovic" target="_blank"><i class="fab fa-github icon" ></i></a></li>
+-                        </ul>
+-                    </div>
+-                </div>
+-            </div>
++                <div>
++                    <ul>
++                        <li>
++                            <a href="https://www.linkedin.com/in/dinija-seferovi%C4%87-722845197/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
++                        <li>
++                            <a href="https://github.com/DinijaSeferovic" target="_blank"><i class="fab fa-github icon" ></i></a></li>
++                    </ul>
++                </div>
++            </div>
++        </div>
+ 
+-        </section>
+-        <section class="projects" id="Projects">
+-            <div class="container">
+-                <h1 class="section-heading"><span>My</span> projects</h1>
+-                <div class="card-wrapper">
+-
+-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+-                        <div class="hovereffect">
+-                            <img class="img-responsive" src="./images/fitness.png" alt="">
+-                            <div class="overlay">
+-                                <h2>Fitness Web App</h2>
+-                                <a class="info" href="https://github.com/DinijaSeferovic/ASP.NetCore-OOAnalysisDesign-FitnessApp">see more</a>
+-                            </div>
+-                        </div>
+-                    </div>
+-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+-                        <div class="hovereffect">
+-                            <img class="img-responsive" src="./images/shelter.png" alt="">
+-                            <div class="overlay">
+-                                <h2>Pet Shelter Desktop App</h2>
+-                                <a class="info" href="https://github.com/DinijaSeferovic/Java-Pet-Shelter-Desktop-App">see more</a>
+-                            </div>
+-                        </div>
+-                    </div>
+-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+-                        <div class="hovereffect">
+-                            <img class="img-responsive" src="./images/movie.png" alt="">
+-                            <div class="overlay">
+-                                <h2>Movie Android App</h2>
+-                                <a class="info" href="https://github.com/DinijaSeferovic/Kotlin-Movies-Mob-App">see more</a>
+-                            </div>
+-                        </div>
+-                    </div>
+-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+-                        <div class="hovereffect">
+-                            <img class="img-responsive" src="./images/covid.png" alt="">
+-                            <div class="overlay">
+-                                <h2>Covid Angular App</h2>
+-                                <a class="info" href="https://github.com/DinijaSeferovic/AngularFirstApp">see more</a>
+-                            </div>
+-                        </div>
+-                    </div>
+-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+-                        <div class="hovereffect">
+-                            <img class="img-responsive" src="./images/student.png" alt="">
+-                            <div class="overlay">
+-                                <h2>Student JavaScript App</h2>
+-                                <a class="info" href="https://github.com/DinijaSeferovic/NodeJS-Student-App">see more</a>
+-                            </div>
+-                        </div>
+-                    </div>
+-                </div>
+-            </div>
+-        </section>
+-        <section class="resume" id="Resume">
+-            <div class="container" >
+-                <h1 class="section-heading2" ><span>My</span> resume</h1>
+-                <h2 class="description"> Education & Skills</h2>
+-                <div class="content">
+-                    <div class="left">
+-                        <div class="inner-left">
+-                            <div class="heading">
+-                                <img class="graduation-cap" src="./images/graduation-cap.png" alt="">
+-                                <h5>Education</h5>
+-                            </div>
+-                            <div class="timeline-wrapper">
+-                                <div class="item">
+-                                    <p>2014-2018 </p>
+-                                    <a href="https://www.gimnazija-ze.com.ba/" target="_blank" class="central">High School</a>
+-                                    <p> Secondary Education</p>
+-                                </div>
+-                                <div class="item">
+-                                    <p>2018-2022 </p>
+-                                    <a href="http://www.etf.unsa.ba/index.php?id=39" target="_blank" class="central">University</a>
+-                                    <p> Bachelor of Computer Science </p>
+-                                </div>
+-                                
+-                            </div>
+-                        </div>
+-                        <div class="inner-right">
+-                            <div class="heading">
+-                                <img class="suitcase" src="./images/suitcase.png" alt="">
+-                                <h5>Experience</h5>
+-                            </div>
+-                            <div class="timeline-wrapper">
++    </section>
++    <section class="projects" id="Projects">
++        <div class="container">
++            <h1 class="section-heading"><span>My</span> projects</h1>
++            <div class="card-wrapper">
++                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
++                    <div class="hovereffect">
++                        <img class="img-responsive" src="./images/auction.png" alt="">
++                        <div class="overlay">
++                            <h2>Auction Web App</h2>
++                            <a class="info" href="https://github.com/DinijaSeferovic/Auction-WebApp/tree/development">see more</a>
++                        </div>
++                    </div>
++                </div>
++                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
++                    <div class="hovereffect">
++                        <img class="img-responsive" src="./images/management.png" alt="">
++                        <div class="overlay">
++                            <h2>Project Management Web App</h2>
++                            <a class="info" href="https://github.com/DinijaSeferovic/Project-Management-WebApp">see more</a>
++                        </div>
++                    </div>
++                </div>
++                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
++                    <div class="hovereffect">
++                        <img class="img-responsive" src="./images/fitness.png" alt="">
++                        <div class="overlay">
++                            <h2>Fitness Web App</h2>
++                            <a class="info" href="https://github.com/DinijaSeferovic/ASP.NetCore-OOAnalysisDesign-FitnessApp">see more</a>
++                        </div>
++                    </div>
++                </div>
++                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
++                    <div class="hovereffect">
++                        <img class="img-responsive" src="./images/shelter.png" alt="">
++                        <div class="overlay">
++                            <h2>Pet Shelter Desktop App</h2>
++                            <a class="info" href="https://github.com/DinijaSeferovic/Java-Pet-Shelter-Desktop-App">see more</a>
++                        </div>
++                    </div>
++                </div>
++                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
++                    <div class="hovereffect">
++                        <img class="img-responsive" src="./images/movie.png" alt="">
++                        <div class="overlay">
++                            <h2>Movie Android App</h2>
++                            <a class="info" href="https://github.com/DinijaSeferovic/Kotlin-Movies-Mob-App">see more</a>
++                        </div>
++                    </div>
++                </div>
++                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
++                    <div class="hovereffect">
++                        <img class="img-responsive" src="./images/covid.png" alt="">
++                        <div class="overlay">
++                            <h2>Covid Angular App</h2>
++                            <a class="info" href="https://github.com/DinijaSeferovic/AngularFirstApp">see more</a>
++                        </div>
++                    </div>
++                </div>
++                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
++                    <div class="hovereffect">
++                        <img class="img-responsive" src="./images/student.png" alt="">
++                        <div class="overlay">
++                            <h2>Student JavaScript App</h2>
++                            <a class="info" href="https://github.com/DinijaSeferovic/NodeJS-Student-App">see more</a>
++                        </div>
++                    </div>
++                </div>
++            </div>
++        </div>
++    </section>
++    <section class="resume" id="Resume">
++        <div class="container" >
++            <h1 class="section-heading2" ><span>My</span> resume</h1>
++            <h2 class="description"> Education & Skills</h2>
++            <div class="content">
++                <div class="left">
++                    <div class="inner-left">
++                        <div class="heading">
++                            <img class="graduation-cap" src="./images/graduation-cap.png" alt="">
++                            <h5>Education</h5>
++                        </div>
++                        <div class="timeline-wrapper">
++                            <div class="item">
++                                <p>2014-2018 </p>
++                                <a href="https://www.gimnazija-ze.com.ba/" target="_blank" class="central">High School</a>
++                                <p> Secondary Education</p>
++                            </div>
++                            <div class="item">
++                                <p>2018-2022 </p>
++                                <a href="http://www.etf.unsa.ba/index.php?id=39" target="_blank" class="central">University</a>
++                                <p> Bachelor of Computer Science </p>
++                            </div>
++
++                        </div>
++                    </div>
++                    <div class="inner-right">
++                        <div class="heading">
++                            <img class="suitcase" src="./images/suitcase.png" alt="">
++                            <h5>Experience</h5>
++                        </div>
++                        <div class="timeline-wrapper">
+ 
+-                                <div class="item">
+-                                    <p>2020-2022 </p>
+-                                    <a href="https://www.fiverr.com/" target="_blank" class="central">Fiverr Freelance</a>
+-                                    <p> Design Freelancer</p>
+-                                </div>
++                            <div class="item">
++                                <p>2020-2022 </p>
++                                <a href="https://www.fiverr.com/" target="_blank" class="central">Fiverr Freelance</a>
++                                <p>Design Freelancer</p>
++                            </div>
++                            <div class="item">
++                                <p>2022-2022 </p>
++                                <a href="" target="_blank" class="central">Internship</a>
++                                <p>Full-stack development internship</p>
+                             </div>
+                         </div>
+                     </div>
++                </div>
+ 
+-                    <div class="right">
+-                        <div class="skills-wrapper">
+-                            <div class="skill-box">
+-                                <h4>Html & CSS</h4>
+-                                <div class="progress-wrap">
++                <div class="right">
++                    <div class="skills-wrapper">
++                        <div class="skill-box">
++                            <h4>Java, Spring Boot</h4>
++                            <div class="progress-wrap">
+                                 <span data-percent="85" class="progress-bar">
+                                 </span>
+-                                </div>
+-                            </div>
+-                            <div class="skill-box">
+-                                <h4>JavaScript</h4>
+-                                <div class="progress-wrap">
+-                                <span data-percent="60" class="progress-bar">
++                            </div>
++                        </div>
++                        <div class="skill-box">
++                            <h4>JavaScript & Frameworks</h4>
++                            <div class="progress-wrap">
++                                <span data-percent="70" class="progress-bar">
+                                 </span>
+-                                </div>
+-                            </div>
+-                            <div class="skill-box">
+-                                <h4>C, C++</h4>
+-                                <div class="progress-wrap">
++                            </div>
++                        </div>
++                        <div class="skill-box">
++                            <h4>C, C++, C#</h4>
++                            <div class="progress-wrap">
+                                 <span data-percent="80" class="progress-bar">
+                                 </span>
+-                                </div>
+-                            </div>
+-                            <div class="skill-box">
+-                                <h4>C#, Java, Kotlin</h4>
+-                                <div class="progress-wrap">
+-                                <span data-percent="80" class="progress-bar">
++                            </div>
++                        </div>
++                        <div class="skill-box">
++                            <h4>Kotlin</h4>
++                            <div class="progress-wrap">
++                                <span data-percent="50" class="progress-bar">
+                                 </span>
+-                                </div>
+-                            </div>
+-                        </div>
+-                    </div>
+-                </div>
+-            </div>
+-        </section>
+-        <section class="contact" id="Contact">
+-            <div class="container">
+-                <h1 class="section-heading">Contact<span> Me</span></h1>
+-                <div class="card-wrapper">
+-                    <div class="card">
+-                        <img src="./images/message.png" alt="">
+-                        <h1> Email Me At</h1>
+-                        <h6> seferovic.dinija@gmail.com</h6>
+-                    </div>
+-                </div>
+-                <form action="mailto:seferovic.dinija@gmail.com" method="GET" enctype="text/plain">
+-                    <div class="input-wrap">
+-                        <input type="text" placeholder="Your Name*" name="Name">
+-                        <input type="email" placeholder="Your Email*" name="cc">
+-                    </div>
+-                    <div class="input-wrap-2">
+-                        <input type="text" placeholder="Your Subject" name="Subject">
+-                        <textarea name="Body" cols="30" rows="7" placeholder="Your message"></textarea>
+-                    </div>
+-                    <div class="btn-wrapper"> <button class="btn btn-primary" type="submit" value="Send">Send Message</button> </div>
+-                </form>
+-            </div>
+-        </section>
+-        <footer>
+-            <img src="./images/blossom.png" alt="logo" width="100" height="100">
+-            <div class="footer-socials">
++                            </div>
++                        </div>
++                    </div>
++                </div>
++            </div>
++        </div>
++    </section>
++    <section class="contact" id="Contact">
++        <div class="container">
++            <h1 class="section-heading">Contact<span> Me</span></h1>
++            <div class="card-wrapper">
++                <div class="card">
++                    <img src="./images/message.png" alt="">
++                    <h1> Email Me At</h1>
++                    <h6> seferovic.dinija@gmail.com</h6>
++                </div>
++            </div>
++            <form action="mailto:seferovic.dinija@gmail.com" method="GET" enctype="text/plain">
++                <div class="input-wrap">
++                    <input type="text" placeholder="Your Name*" name="Name">
++                    <input type="email" placeholder="Your Email*" name="cc">
++                </div>
++                <div class="input-wrap-2">
++                    <input type="text" placeholder="Your Subject" name="Subject">
++                    <textarea name="Body" cols="30" rows="7" placeholder="Your message"></textarea>
++                </div>
++                <div class="btn-wrapper"> <button class="btn btn-primary" type="submit" value="Send">Send Message</button> </div>
++            </form>
++        </div>
++    </section>
++    <footer>
++        <img src="./images/blossom.png" alt="logo" width="100" height="100">
++        <div class="footer-socials">
+ 
+-                <a href="https://www.linkedin.com/in/dinija-seferovi%C4%87-722845197/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+-                <a href="https://github.com/DinijaSeferovic" target="_blank"><i class="fab fa-github icon" ></i></a>
+-                
+-            </div>
+-            <div class="copyright">
+-                Copyright 2022 © Dinija Seferovic
+-            </div>
+-            <div class="top">
+-                <a href="#Home"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+-            </div>
+-        </footer>
+-    </div>
++            <a href="https://www.linkedin.com/in/dinija-seferovi%C4%87-722845197/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
++            <a href="https://github.com/DinijaSeferovic" target="_blank"><i class="fab fa-github icon" ></i></a>
++
++        </div>
++        <div class="copyright">
++            Copyright 2022 © Dinija Seferovic
++        </div>
++        <div class="top">
++            <a href="#Home"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
++        </div>
++    </footer>
++</div>
+ 
+-    <script type="text/javascript" src="javascript/app.js"></script>
++<script type="text/javascript" src="javascript/app.js"></script>
+ </body>
+-</html>
++</html>
+\ No newline at end of file
